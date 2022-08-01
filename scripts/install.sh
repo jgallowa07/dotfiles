@@ -33,6 +33,7 @@ install tree
 install vim
 install wget
 install zsh
+install tmux
 
 # Image processing
 # install gimp
@@ -40,7 +41,7 @@ install zsh
 # install optipng
 
 # Run all scripts in programs/
-for f in programs/*.sh; do bash "$f" -H; done
+# for f in programs/*.sh; do bash "$f" -H; done
 
 # Get all upgrades
 sudo apt upgrade -y
