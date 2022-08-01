@@ -61,6 +61,10 @@ set background=dark
 " Status bar
 set laststatus=2
 
+" command mode
+:imap jj <esc>
+
+
 " Airline status line config
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
@@ -103,16 +107,16 @@ set history=50
 set hidden
 
 " Direction keys for wrapped lines
-nnoremap <silent> k gk
-nnoremap <silent> j gj
-nnoremap <silent> <Up> gk
-nnoremap <silent> <Down> gj
-inoremap <silent> <Up> <Esc>gka
-inoremap <silent> <Down> <Esc>gja
-
-" Bash / emacs keys for command line
-cnoremap <C-a> <Home>
-cnoremap <C-e> <End>
+" nnoremap <silent> k gk
+" nnoremap <silent> j gj
+" nnoremap <silent> <Up> gk
+" nnoremap <silent> <Down> gj
+" inoremap <silent> <Up> <Esc>gka
+" inoremap <silent> <Down> <Esc>gja
+" 
+" " Bash / emacs keys for command line
+" cnoremap <C-a> <Home>
+" cnoremap <C-e> <End>
 
 " Change the cursor at insert mode
 let &t_ti.="\<Esc>[1 q"
