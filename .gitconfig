@@ -20,3 +20,16 @@
     # instead of opening all files:
     # git reviewone foo.js bar.js
     reviewone = !vim -p +\"tabdo Gdiff $BASE\" +\"let g:gitgutter_diff_base = '$BASE'\"
+
+[user]
+	email = jaredgalloway07@gmail.com
+	name = Jared Galloway
+[core]
+	editor = vim
+[credential]
+	helper = cache
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
